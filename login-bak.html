@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เข้าสู่ระบบ CMRU WIFI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          class="img-fluid"
+          src="assets/img/105605400_274386583776226_1760400270307363715_n.png"
+          alt="cmru-wifi-logo"
+          width="720"
+        />
+      </header>
+      <div class="row">
+        <div class="col-md-8 offset-md-2 login-card">
+          <div class="row">
+            <div class="col-md-12">
+              <div
+                class="d-flex justify-content-center align-items-center align-content-center"
+              >
+                <div class="label">
+                  Username
+                </div>
+                <div class="vertical-divider"></div>
+                <div
+                  class="d-flex flex-column justify-content-center align-content-center"
+                >
+                  <p class="m-0">
+                    <strong class="text-danger">นักศึกษา :</strong> รหัสนักศึกษา
+                    <span class="text-danger">*</span>
+                  </p>
+                  <p class="m-0">
+                    <strong class="text-danger">อาจารย์และบุคลากร :</strong>
+                    หมายเลขบัตรประชาชน
+                    <span class="text-danger">*</span>
+                  </p>
+                </div>
+              </div>
+              <input
+                id="inputUsername"
+                type="text"
+                class="form-control form-control-lg"
+                value=""
+                name="username"
+                required
+                placeholder="รหัสนักศึกษา/รหัสบัตรประชาชน"
+              />
+              <div
+                class="d-flex justify-content-center align-items-center align-content-center"
+              >
+                <div class="label">
+                  Password
+                </div>
+                <div class="vertical-divider"></div>
+                <div
+                  class="d-flex flex-column justify-content-center align-content-center"
+                >
+                  <p class="m-0">
+                    <strong class="text-danger">นักศึกษา :</strong> (ตัวอย่าง)
+                    01/01/2540
+                    <span class="text-danger">*</span>
+                  </p>
+                  <p class="m-0">
+                    <strong class="text-danger">อาจารย์และบุคลากร :</strong>
+                    (ตัวอย่าง) 01/01/2540
+                    <span class="text-danger">*</span>
+                  </p>
+                </div>
+              </div>
+              <input
+                type="password"
+                class="form-control form-control-lg"
+                value=""
+                name="password"
+                required
+                placeholder="วัน/เดือน/ปีเกิด (พ.ศ.)"
+              />
+            </div>
+            <div class="col-md-12 mt-3">
+              <div class="d-flex align-content-center justify-content-around">
+                <a class="text-danger" href="http://wifireg.cmru.ac.th"
+                  >ลงทะเบียน (สำหรับนักศึกษารหัส 63)</a
+                >
+                <a class="text-danger" href="#">ลืมรหัสผ่าน</a>
+              </div>
+            </div>
+            <div class="btn-absolute-custom">
+              <button
+                class="btn-radius btn-grad"
+                style="color: #ffffff; font-weight: bolder;"
+              >
+                LOGIN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-5" />
+      <p class="text-center text-info">
+        หากมีปัญหาการใช้งานโปรดติดต่อฝ่าย network สำนักดิจิทัลเพื่อการศึกษาที่
+        <a href="tel:+6653885937">053885937</a> หรือ
+        <a href="https://fb.com/digital-cmru" target="_blank"
+          >Facebook สำนักดิจิทัลเพื่อการศึกษา</a
+        >
+      </p>
+      <hr />
+      <p class="text-center text-muted">
+        <small
+          >© 2020 สงวนสิทธิ์ สำนักดิจิทัลเพื่อการศึกษา
+          มหาวิทยาลัยราชภัฏเชียงใหม่</small
+        >
+      </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/md5.js"></script>
+    <script>
+      $("#inputUsername").focus();
+    </script>
+  </body>
+</html>
